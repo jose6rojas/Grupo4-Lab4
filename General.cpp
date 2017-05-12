@@ -8,7 +8,7 @@ General::General(char color,int x, int y)::Pieza(color,x,y){
 }
 
 
-Pieza** General::Pieza(Pieza** tablero, Pieza p, int x, int y){
+Pieza** General::Pieza(Pieza** tablero, Pieza* p, int x, int y){
     
     if(p.getColor = 'N' ){
         //diagonal
