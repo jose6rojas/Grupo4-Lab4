@@ -3,11 +3,11 @@
 #define MARINE_H
 
 #include "Pieza.h"
-
+#include <string>
 class Marine : public Pieza{
   public:
     Marine();
-    Marine(char,int,int);
+    Marine(string,int,int);
 
     
     
