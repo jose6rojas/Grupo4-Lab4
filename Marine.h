@@ -7,14 +7,11 @@
 class Marine : public Pieza{
   public:
     Marine();
-    Marine(int,int,char);
+    Marine(char,int,int);
 
-    int getX();
-    int getY();
-    void setX(int);
-    void setY(int);
     
-    Pieza** Mover(Pieza**,Pieza,int,int);
+    
+    Pieza*** Mover(Pieza***,Pieza,int,int);
     
 
 
