@@ -13,7 +13,7 @@ class General:public Pieza(){
         void setX(int);
         void setY(int);
         
-        Pieza** Mover(Pieza**,Pieza*,int, int);
+        Pieza*** Mover(Pieza***,Pieza*,int, int);
 
 };
 #endif
