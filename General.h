@@ -9,8 +9,10 @@ class General:public Pieza(){
 //        MoverPieza(int, int);
         int getX();
         int getY();
+        
         void setX(int);
         void setY(int);
+        
         Pieza** Mover(Pieza**,Pieza,int, int);
 
 };
