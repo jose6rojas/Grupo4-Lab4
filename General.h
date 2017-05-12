@@ -1,10 +1,11 @@
 #include "Pieza.h"
 #ifndef GENERAL_H
 #define GENERAL_H
+#include <string>
 class General:public Pieza(){
     public:
         General();
-        General(char ,int, int);
+        General(string,int, int);
 
 //        MoverPieza(int, int);
         int getX();
