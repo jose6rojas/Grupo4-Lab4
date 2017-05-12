@@ -11,7 +11,7 @@ class Marine : public Pieza{
 
     
     
-    Pieza*** Mover(Pieza***,Pieza,int,int);
+    Pieza*** Mover(Pieza***,Pieza*,int,int);
     
 
 
