@@ -7,12 +7,13 @@
 #include <ncurses.h>
 #include "Pieza.h"
 #include "Marine.h"
+#include <sstream>
 // #include "General.h"
 
 using namespace std;
 
 void imprimirMatriz(Pieza***); // matriz
-
+int Letra(char);//pasar de char a numero
 int main(int argc, char const *argv[])
 {
 	initscr();
@@ -71,6 +72,38 @@ int main(int argc, char const *argv[])
 	}
 	
 	imprimirMatriz(matriz);
+ /* printw("Ingrese la letra de la columna de la pieza que desea mover: \n");
+  char x1;
+  x1 = getch();
+  getstr(x1);
+  int x2; 
+  stringstream ss;
+  
+  x2 = Letra(x1);
+  ss<<x2;
+  string a = ss.str();
+  
+  printw(a.c_str());
+ printw("Ingrese el numero de la fila de la pieza que desea mover: \n");
+  char y1;
+  y1 = getch();
+  int y2;
+  y2 = Letra(y1);
+  printw("Ingrese la letra de la columna del lugar al que se desea mover: \n");
+  char x3;
+  x3=getch();
+  int x4;
+  x4 = Letra(x3);
+  printw("Ingrese el numero de fila del lugar al que se desea mover: \n");
+  char y3;
+  y3 = getch();
+  int y4;
+  y4 = Letra(y3);
+  Marine* m;
+  m = reinterpret_cast<Marine*>(matriz[x2][y2]);
+  matriz = m->Mover(matriz,m,y4,x4);
+  imprimirMatriz(matriz);*/
+
 	// refresh();
 	
 	// Libera a la matriz
@@ -138,7 +171,33 @@ void imprimirMatriz(Pieza*** matriz)
 	}
 }
 
-
+int Letra(string num){
+  if(num=="a"||num=="0"){
+    return 0;
+  }
+  if(num=="b"||num=="1"){
+    return 1;
+  }
+  if(num == "c"||num=="2"){
+    return 2;
+  }
+  if(num == "d"||num=="3"){
+    return 3;
+  }
+  if(num == "e"||num=="4"){
+    return 4;
+  }
+  if(num == "f"||num=="5"){
+    return 5;
+  }
+  if(num == "g"||num=="6"){
+    return 6;
+  }
+  if(num == "h"||num=="7"){
+    return 7;
+  }
+  return 0;
+}
 
 
 
